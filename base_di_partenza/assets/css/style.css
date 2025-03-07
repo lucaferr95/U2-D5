@@ -38,15 +38,21 @@ button {
   padding: 0 10px;
 }
 .title {
+  display: flex;
+
+  justify-content: space-between;
   background-color: #ffc017;
   font-family: "Spectral", serif;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  border: 1px solid rgba(0, 0, 0, 0.455);
 }
 .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-left: 2em;
+  width: 50%;
+  height: auto;
 }
 .title h1 {
   font-family: "Spectral", serif;
@@ -63,8 +69,74 @@ button {
   background-color: black;
   color: white;
   border-radius: 20px;
-  height: 100%;
-  padding: 10px 20px;
-  margin-top: 10px;
-  margin-left: -0.5em;
+  width: 50%;
+  margin-top: 20px;
+  height: 40px;
+  margin-right: 200px;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+  margin: 0;
+}
+#trendingContainer {
+  gap: 10px;
+  display: flex;
+}
+#trendingContainer h3 {
+  font-size: 0.6em;
+  font-weight: 800;
+}
+.articleMain {
+  width: 35%;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.containerTrendings {
+  margin-bottom: 50px;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.containerArticle {
+  display: flex;
+  align-items: center;
+  font-size: 0.7em;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.containerArticle h3 {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+.number {
+  position: absolute;
+  font-size: 2em;
+  margin-left: -50px;
+  color: #d8d8d8;
+}
+.containerArticle img {
+  border-radius: 25px;
+  width: 18px;
+  align-items: baseline;
+}
+
+.contentArticle {
+  max-width: 80%;
+}
+.contentArticle h2 {
+  font-weight: 700;
+  font-size: 0.7em;
+}
+.contentArticle p {
+  color: #646464;
+  font-size: 0.6em;
+  display: inline-block;
+}
+.articleMain a {
+  text-decoration: none;
+  color: #191919;
 }
